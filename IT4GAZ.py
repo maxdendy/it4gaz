@@ -207,8 +207,6 @@ class GAZ:
                         date_str = row[1]
                         date_obj = datetime.strptime(date_str, "%a, %d %b %Y %H:%M:%S GMT")
                         processed_data.append([date_obj] + row[2:14])
-                    data = processed_data
-                    print(data)
                     return data
                 except requests.exceptions.JSONDecodeError:
                     print("Ошибка: сервер вернул не JSON, а:", response.text)
