@@ -13,7 +13,7 @@ services:
       - pgdata:/var/lib/postgresql/data
     networks:
       it4gaz:
-        ipv4_address: 10.5.0.5
+        ipv4_address: 10.7.0.5
 
 volumes:
   pgdata:
@@ -23,5 +23,5 @@ networks:
     driver: bridge
     ipam:
       config:
-        - subnet: 10.5.0.0/16
-          gateway: 10.5.0.1
+        - subnet: 10.7.0.0/16
+          gateway: 10.7.0.1
