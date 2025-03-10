@@ -12,7 +12,7 @@ app = Flask(__name__)
 # Настройки базы данных
 PGSQL_USERNAME = "userforus"
 PGSQL_PASSWORD = "bA6si2bUA2dba2-G"
-PGSQL_HOST = "mxdndy.ru"
+PGSQL_HOST = "localhost"
 database_URL = f'postgresql://{PGSQL_USERNAME}:{PGSQL_PASSWORD}@{PGSQL_HOST}/it4gaz'
 
 engine = create_engine(database_URL)
